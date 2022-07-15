@@ -1,0 +1,222 @@
+/*base variabels*/
+
+/*PADDING & MARGIN*/
+$base-margin: 0.5rem !default;
+$base-padding: 0.5rem !default;
+
+/*TEXT*/
+//FONT FAMILY
+$font-family-BebasNeue: "Bebas Neue", cursive !default;
+$font-family-Libre_Baskerville: "Libre Baskerville", serif !default;
+$font-family--Poppins: "Poppins", sans-serif !default;
+$font-family-Source_Code_Pro: "Source Code Pro", monospace !default;
+$font-family-Roboto: "Roboto", sans-serif !default;
+//FONT-SIZING
+$base-font-size: 1rem;
+$font-size-xs: $base-font-size * 0.75 !default;
+$font-size-sm: $base-font-size * 1.25 !default;
+$font-size-md: $base-font-size * 1.5 !default;
+$font-size-lg: $base-font-size * 1.75 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
+$font-size-xxxl: $base-font-size * 4 !default;
+//LINE HEIGHT
+$base-line-height: 1.75rem;
+//letter-spacing
+$base-letter-spacing: 0.2rem;
+/*SPACING*/
+/*BORDERS*/
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
+/*BOX-SHADOW*/
+$base-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+  rgba(255, 255, 255, 0.8) -6px -2px 16px 0px !default;
+
+$box-shadow-1: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$box-shadow-2: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+$box-shadow-3: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+$box-shadow-4: rgb(38, 57, 77) 0px 20px 30px -10px;
+$box-shadow-5: blue 0px 0px 0px 2px inset,
+  rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px,
+  rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px,
+  rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px,
+  rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+$box-shadow-6: rgb(85, 91, 255) 0px 0px 0px 3px,
+  rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px,
+  rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+$box-shadow-7: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+$box-shadow-8: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+  rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+  rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+  rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+$box-shadow-9: rgba(240, 46, 170, 0.4) -5px 5px,
+  rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+  rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+$box-shadow-10: rgba(240, 46, 170, 0.4) 0px 5px,
+  rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px,
+  rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+$box-shadow-11: rgba(240, 46, 170, 0.4) 5px 5px,
+  rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+  rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+$box-shadow-12: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+/*DISPLAY*/
+
+/*COLORS*/
+/*THEME COLORS*/
+//nav bar
+$Amazon-primery-nav-background-color: #131921;
+$Amazon-primery-nav-text-color: #ffffff;
+$Amazon-secondery-nav-text-color: #000000;
+$Amazon-search-icon-background-color: #cd9042;
+$white: #ffffffff;
+//red
+$error: red;
+$Cherry-Tomato: #ed2b33ff;
+$Cherry-Tomato-v2: #e94b3cff;
+//orange
+$Raspberry: #d64161ff;
+$Living_Coral: #fc766aff;
+$info: orange;
+$Blooming-Dahlia: #e69a8dff;
+$Peach: #eea47fff;
+$Windsor-Wine: #643e46ff;
+//yellow
+$Cream-Gold: #e0c568ff;
+$Dusky-Citron: #e3cd81ff;
+$Illuminating: #f4df4eff;
+//green
+$Hunter-Green: #435e55ff;
+$Forest-Green: #2c5f2d;
+$secondery: green;
+$Moss-Green: #97bc62;
+$Teal: #4b878bff;
+$ligte_teal: #22c1c3;
+$Aged-Copper: #5cc8d7ff;
+$Mint: #adefd1ff;
+$Light-Green: #a8d5baff;
+$Sagebrush-Green: #567572ff;
+$Turquoise: #42eaddff;
+//blue
+$Sailor-Blue: #00203fff;
+$indigo: #1e2761;
+$primery: BLUE;
+$Turkish-Sea: #195190ff;
+$Royal-Blue: #00539cff;
+$Electric-Blue-Lemonade: #0063b2ff;
+$Pacific-Coast: #5b84b1ff;
+$Light-Blue: #8bbee8ff;
+$Ice-Flow: #c7d3d4ff;
+$Aquamarine: #9cc3d5ff;
+// purple
+
+$purple: #93385fff;
+$Ultra-Violet: #5f4b8bff;
+$Royal-Purple: #603f83ff;
+$raspberry: #8a307f;
+$Orchid: #d198c5ff;
+$Light-Purple: #d7a9e3ff;
+$Pink-Salt: #fad0c9ff;
+//maroon
+$maroon: #881b4c;
+$Marsala: #964f4cff;
+$Copper-Coin: #b1624eff;
+
+$Brown-Sugar: #a07855ff;
+$Warm-Sand: #cdb599ff;
+$Beige: #d4b996ff;
+//white
+$white: #ffffffff;
+//black
+$black-v1: #101820ff;
+$Black-v2: #101820ff;
+$Black-v3: #2d2926ff;
+//grey
+$Granite-Gray: #696667ff;
+$Charcoal-Gray: #6e6e6dff;
+$ultimate-Gray: #949398ff;
+$Cool-Gray: #b1b3b3ff;
+$Silver: #a2a2a1ff;
+
+//map of colors
+$colors: (
+  //red
+  "error": $error,
+  "Cherry-Tomato": $Cherry-Tomato,
+  "Cherry-Tomato-v2": $Cherry-Tomato-v2,
+  //orange
+  "raspberry": $raspberry,
+  // "raspberry_secondery": $raspberry_secondery,
+  "Living_Coral": $Living_Coral,
+  "info": $info,
+  "Blooming-Dahlia": $Blooming-Dahlia,
+  "Peach": $Peach,
+  // "Orange": $Orange,
+  "Windsor-Wine": $Windsor-Wine,
+  //yellow
+  "Cream-Gold": $Cream-Gold,
+  "Dusky-Citron": $Dusky-Citron,
+  "Illuminating": $Illuminating,
+  //green
+  "Hunter-Green": $Hunter-Green,
+  "Forest-Green": $Forest-Green,
+  "secondery": $secondery,
+  "Moss-Green": $Moss-Green,
+  "Teal": $Teal,
+  "ligte_teal": $ligte_teal,
+  "Aged-Copper": $Aged-Copper,
+  "Mint": $Mint,
+  "Sagebrush-Green": $Sagebrush-Green,
+  "Turquoise": $Turquoise,
+  //blue
+  "Sailor-Blue": $Sailor-Blue,
+  "indigo": $indigo,
+  "primery": $primery,
+  "Turkish-Sea": $Turkish-Sea,
+  "Royal-Blue": $Royal-Blue,
+  "Electric-Blue-Lemonade": $Electric-Blue-Lemonade,
+  "Pacific-Coast": $Pacific-Coast,
+  "Light-Blue": $Light-Blue,
+  "Ice-Flow": $Ice-Flow,
+  "Aquamarine": $Aquamarine,
+
+  //purpele
+  "purple": $purple,
+  "Ultra-Violet": $Ultra-Violet,
+  "Royal-Purple": $Royal-Purple,
+  "Raspberry": $Raspberry,
+  "Orchid": $Orchid,
+  "Light-Purple": $Light-Purple,
+  "Pink-Salt": $Pink-Salt,
+  //maroon
+  "maroon": $maroon,
+  "Marsala": $Marsala,
+  "Copper-Coin": $Copper-Coin,
+  "Brown-Sugar": $Brown-Sugar,
+  "Warm-Sand": $Warm-Sand,
+  "Beige": $Beige,
+
+  //white
+  "white": $white,
+  //gray
+  "Granite-Gray": $Granite-Gray,
+  "Silver": $Silver,
+  "Charcoal-Gray": $Charcoal-Gray,
+  "Cool-Gray": $Cool-Gray,
+  //black
+  "black": $black-v1,
+  "Black-v2": $Black-v2,
+  "Black-v3": $Black-v3
+);
+
+/*DEBUG*/
+// @debug map-get($colors, $key: "primery");
+// @debug map-has-key($colors, $key: "secondery");
+// @debug map-keys($colors);
+// @debug map-values($colors);
+// @debug map-remove($colors, $keys:"primery" )
+// @debug map-merge($colors , ("primery": $primery) )

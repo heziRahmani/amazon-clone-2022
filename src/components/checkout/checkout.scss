@@ -1,0 +1,111 @@
+@import "../../SASS/variables";
+//ganeral styles
+//checkout.js
+.checkout-container {
+  display: flex;
+  padding: 20px;
+  height: max-content;
+  gap: 20px;
+  max-width: 1500px;
+
+  margin: 0 auto;
+  .checkout-left {
+    flex: 60%;
+    background-color: white;
+    .checkout-top-banner {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .checkOut-title-box {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    //CheckoutProduct.js
+    .checkout-item-box {
+      .checkout-product-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+
+        padding: $base-padding;
+        border-bottom: 1em solid rgba(234, 237, 237);
+        .checkout-product-info-container {
+          display: flex;
+
+          align-items: center;
+          justify-content: center;
+
+          .checkout-product-img {
+            max-width: 40%;
+            width: 100%;
+            object-fit: contain;
+            margin-bottom: 15px;
+          }
+          .checkout-product-info-box {
+            max-width: 100%;
+            width: 100%;
+            padding: 15px;
+            width: 100%;
+            // z-index: 1000;
+            background-color: white;
+            .checkout-product-info {
+            }
+
+            .checkout-product-price {
+            }
+            div {
+              .product-rating {
+                display: flex;
+                color: #cd9042;
+              }
+            }
+          }
+        }
+        button {
+          background-color: $Amazon-search-icon-background-color;
+          border: 1px solid;
+          border-color: #a88734 #9c7e31 #846a29;
+          margin-top: 10px;
+          color: $black-v1;
+          padding: 5px;
+        }
+      }
+    }
+  }
+  .checkout-rigth {
+    flex: 30%;
+  }
+}
+//subtotal.js
+.subtotal-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: $box-shadow-12;
+  width: fit-content;
+  //   height: 100px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+
+  .subtotal-info-box {
+    .subtotal-gift-box {
+      display: flex;
+      gap: 5px;
+    }
+  }
+  .checkout-btn-box {
+    .checkout-btn {
+      background-color: $Amazon-search-icon-background-color;
+      border: 1px solid;
+      border-color: #a88734 #9c7e31 #846a29;
+      margin-top: 10px;
+      color: $black-v1;
+      //   padding: 5px;
+      border-radius: 2px;
+      width: 100%;
+      height: 30px;
+    }
+  }
+}

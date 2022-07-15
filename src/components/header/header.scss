@@ -1,0 +1,74 @@
+@import "../../SASS/index.scss";
+.header-container {
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $Amazon-primery-nav-background-color;
+  color: $Amazon-primery-nav-text-color;
+  .icon-box {
+    img {
+      width: 100px;
+
+      object-fit: contain;
+      margin: 0 20px;
+      margin-top: 18px;
+    }
+  }
+
+  .header-search-box {
+    display: flex;
+    flex: 1;
+    border-radius: 24px;
+    align-items: center;
+
+    input {
+      width: 100%;
+      border: none;
+      padding: 10px;
+      height: 12px;
+    }
+    .header-Search-icon {
+      display: grid;
+      place-content: center;
+      padding: 5px;
+      height: 22px;
+      background-color: $Amazon-search-icon-background-color;
+      color: $Amazon-secondery-nav-text-color;
+    }
+  }
+  .header-links-container {
+    // width: 100px;
+    padding: 0 20px;
+    font-size: $font-size-xs;
+    .header-links-box {
+      display: flex;
+      justify-content: space-evenly;
+      .header-links-option {
+        display: flex;
+        flex-direction: column;
+        margin-inline: 10px;
+        .header-option-1 {
+          font-weight: 100;
+        }
+        .header-option-2 {
+          font-weight: 600;
+          font-size: $base-font-size;
+        }
+        .header-checkout-icon {
+          display: flex;
+          justify-items: center;
+          align-items: center;
+          height: 100%;
+        }
+        .header-item-count {
+          margin-inline: $base-margin;
+        }
+      }
+    }
+  }
+}

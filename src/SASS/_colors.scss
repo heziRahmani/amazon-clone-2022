@@ -1,0 +1,79 @@
+/**/
+
+@each $key, $value in $colors {
+  .text-color-#{$key} {
+    color: $value;
+  }
+  .text-hover-color-#{$key} {
+    &:hover {
+      color: $value;
+    }
+  }
+  .bg-color-#{$key} {
+    background-color: $value;
+  }
+  .bg-hover-color-#{$key} {
+    &:hover {
+      background-color: $value;
+    }
+  }
+  .bc-#{$key} {
+    border-color: $value;
+  }
+  .bc-hover-#{$key} {
+    &:hover {
+      border-color: $value;
+    }
+  }
+
+  @if ($key!= "black" and $key!= "white") {
+    //light variation
+    @for $i from 1 to 9 {
+      .text-color-#{$key}-light-#{$i} {
+        color: mix(white, $value, $i * 10);
+      }
+      .text-hover-color-#{$key}-light-#{$i} {
+        &:hover {
+          color: mix(white, $value, $i * 10);
+        }
+      }
+      .bg-color-#{$key}-light-#{$i} {
+        background-color: mix(white, $value, $i * 10);
+      }
+      .bg-hover-color-#{$key}-light-#{$i} {
+        &:hover {
+          background-color: mix(white, $value, $i * 10);
+        }
+      }
+    }
+    //dark variation
+    @for $i from 1 to 9 {
+      .text-color-#{$key}-dark-#{$i} {
+        color: mix(black, $value, $i * 10);
+      }
+      .text-hover-color-#{$key}-dark-#{$i} {
+        &:hover {
+          color: mix(black, $value, $i * 10);
+        }
+      }
+      .bg-color-#{$key}-dark-#{$i} {
+        background-color: mix(black, $value, $i * 10);
+      }
+      .bg-hover-color-#{$key}-dark-#{$i} {
+        &:hover {
+          background-color: mix(black, $value, $i * 10);
+        }
+      }
+    }
+    //color complimenet
+    .text-color-compliment-#{$key} {
+      color: light-complement-color($value);
+    }
+    //color complimenet
+    .bg-color-compliment-#{$key} {
+      background-color: light-complement-color($value);
+    }
+  }
+}
+
+// @debug (length($colors) * 9) * 2;

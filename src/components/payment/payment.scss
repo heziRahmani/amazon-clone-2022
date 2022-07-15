@@ -1,0 +1,92 @@
+@import "../../SASS/index.scss";
+
+.payment-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  .payment-box-delivery {
+    .payment-title {
+    }
+    .payment-address {
+      div {
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+      }
+    }
+  }
+  .payment-middel-box {
+    display: flex;
+    gap: 2em;
+    .payment-left-container {
+      width: 60%;
+      .payment-box-products {
+        .checkout-product-main-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: $white;
+
+          padding: $base-padding;
+          border-bottom: 1em solid rgba(234, 237, 237);
+          .checkout-product-info-container {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            .checkout-product-img {
+              max-width: 40%;
+              width: 100%;
+              object-fit: contain;
+              margin-bottom: 15px;
+            }
+            .checkout-product-info-box {
+              max-width: 100%;
+              width: 100%;
+              padding: 15px;
+              width: 100%;
+              //   z-index: 1000;
+              background-color: white;
+              .checkout-product-info {
+              }
+
+              .checkout-product-price {
+              }
+              div {
+                .product-rating {
+                  display: flex;
+                  color: #cd9042;
+                }
+              }
+            }
+          }
+          button {
+            @include amazonBtn;
+          }
+        }
+      }
+    }
+    .payment-right-container {
+      //PaymentTotal.js
+      .paymentTotal-container {
+        background-color: white;
+        padding: 2em;
+      }
+      .payment-box-payment {
+        div {
+          form {
+            // display: flex;
+            // justify-content: center;
+            // flex-direction: column;
+            button {
+              @include amazonBtn;
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

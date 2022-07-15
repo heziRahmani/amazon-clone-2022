@@ -1,0 +1,51 @@
+@import "../../SASS/index";
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  .signin-home-link {
+    .logo-box {
+      img {
+        margin: 20px auto;
+        object-fit: contain;
+        width: 100px;
+      }
+    }
+  }
+  .signin-form-box {
+    width: 375px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    gap: 20px;
+    .signin-input-box {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-weight: 600;
+      }
+    }
+    .signIn-btn {
+      background-color: #f0c14b;
+      border-radius: 2px;
+      width: 100%;
+      height: 30px;
+      border: 1px solid;
+      margin-top: 10px;
+      border-color: #a88734 #9c7e31 #846a29;
+    }
+  }
+  p {
+    font-size: 12px;
+  }
+  .create-accuont-link {
+    @include amazonBtn;
+    font-size: $font-size-xs;
+  }
+}
