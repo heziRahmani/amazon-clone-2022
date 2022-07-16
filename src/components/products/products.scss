@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include scrollBar-transperent;
   .product-info-top {
     height: 30%;
     .product-info {

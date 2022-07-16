@@ -6,3 +6,27 @@
   color: $black-v1;
   padding: 5px;
 }
+
+@mixin scrollBar-transperent {
+  //scroll-bar
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $Amazon-search-icon-background-color;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $Amazon-search-icon-background-color;
+  }
+}

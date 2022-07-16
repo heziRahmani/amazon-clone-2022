@@ -26,6 +26,23 @@ body {
   font-family: Poppins;
   letter-spacing: 0.2rem;
   background-color: #eaeded;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+body ::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+body ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+body ::-webkit-scrollbar-thumb {
+  background: #cd9042;
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background: #cd9042;
 }
 
 ul {
@@ -35,6 +52,27 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cd9042;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cd9042;
 }
 
 /*COLORS*/

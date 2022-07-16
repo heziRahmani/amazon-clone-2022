@@ -38,12 +38,14 @@ export default function Header() {
             {userToken ? (
               <Link
                 to={"/"}
-                className='header-links-option'
+                className='header-links-option header-links-option-2'
                 onClick={() => userSignOut()}>
                 <span className='header-option-2'>Sign Out</span>
               </Link>
             ) : (
-              <Link to={"/signin"} className='header-links-option'>
+              <Link
+                to={"/signin"}
+                className='header-links-option header-links-option-2'>
                 <span className='header-option-2'>Sign In</span>
               </Link>
             )}

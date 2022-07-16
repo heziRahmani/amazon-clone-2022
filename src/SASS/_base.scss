@@ -1,5 +1,6 @@
 /*IMPORTS*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@100;400;600;800&family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap");
+
 /*CSS VARIABLES*/
 /* RESET STYLES*/
 *,
@@ -15,6 +16,7 @@ body {
   font-family: Poppins;
   letter-spacing: $base-letter-spacing;
   background-color: #eaeded;
+  @include scrollBar-transperent;
 }
 
 ul {
@@ -25,3 +27,4 @@ ul {
 a {
   text-decoration: none;
 }
+@include scrollBar-transperent;

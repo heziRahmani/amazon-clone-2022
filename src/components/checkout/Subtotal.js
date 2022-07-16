@@ -20,7 +20,7 @@ export default function Subtotal({ numOfItems, subtotal }) {
       <div className='subtotal-info-box'>
         <p>
           Subtotal {"("}
-          {numOfItems} items{")"} :<small>$</small>
+          {numOfItems} items{")"} :<strong>$</strong>
           <strong>{subtotal}</strong>
         </p>
         <div className='subtotal-gift-box'>
